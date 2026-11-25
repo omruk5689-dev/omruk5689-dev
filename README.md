@@ -1,4 +1,8 @@
 <div align="center">
+  <img src="./assets/falling-words.svg" width="900" alt="Animated banner with Omer's name and hardware words falling like digital rain">
+</div>
+
+<div align="center">
   <img src="./assets/omer-binary.svg" width="588" alt="Omer's profile picture, drawn with zeros and ones">
   <br>
   <sub>me, in binary — the 1s are the important bits</sub>
