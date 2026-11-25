@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/falling-words.svg?v=1" width="900" alt="Animated banner with Omer's name and hardware words falling like digital rain">
+  <img src="./assets/falling-words.svg?v=2" width="900" alt="Animated banner with Omer's name and hardware words falling like digital rain">
 </div>
 
 <h1 align="center">hey, i'm Omer 👋</h1>
@@ -70,6 +70,10 @@ And yes, I still get excited when an LED blinks on the first try.
 - making **OMER.EXE** feel less like a website and more like a game
 - getting better at firmware architecture, one UART at a time
 - saying "this is the last PCB for a while" and not meaning it
+
+<div align="center">
+  <img src="./assets/status-ticker.svg" width="900" alt="" aria-hidden="true">
+</div>
 
 ### find me
 

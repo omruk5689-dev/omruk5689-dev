@@ -317,7 +317,7 @@
         <text x="450" y="210" text-anchor="middle" textLength="390" lengthAdjust="spacingAndGlyphs" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="700" fill="#8b949e" letter-spacing="1.5" clip-path="url(#typeClip)">18 · PCB DESIGNER · FIRMWARE TINKERER</text>
         <rect class="cursor" x="651" y="192" width="10" height="22" rx="1.5" fill="#7ee787"/>
       </g>
-      <text class="static-sub" x="450" y="210" text-anchor="middle" textLength="390" lengthAdjust="spacingAndGlyphs" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="700" fill="#8b949e" letter-spacing="1.5">18 · PCB DESIGNER · FIRMWARE TINKERER</text>
+      <text class="static-sub" display="none" x="450" y="210" text-anchor="middle" textLength="390" lengthAdjust="spacingAndGlyphs" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="700" fill="#8b949e" letter-spacing="1.5">18 · PCB DESIGNER · FIRMWARE TINKERER</text>
     </g>
     <rect x=".5" y=".5" width="899" height="299" rx="17.5" fill="none" stroke="#1f6f43" stroke-opacity=".35"/>
   </g>
