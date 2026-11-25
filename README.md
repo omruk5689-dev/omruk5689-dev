@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/falling-words.svg?v=2" width="900" alt="Animated banner with Omer's name and hardware words falling like digital rain">
+  <img src="./assets/falling-words.svg?v=3" width="900" alt="Animated banner with Omer's name and hardware words falling like digital rain">
 </div>
 
 <h1 align="center">hey, i'm Omer 👋</h1>
