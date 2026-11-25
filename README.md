@@ -34,6 +34,10 @@ And yes, I still get excited when an LED blinks on the first try.
 <img src="./assets/avatar.jpg" width="150" alt="Omer's avatar">
 </details>
 
+<div align="center">
+  <img src="./assets/circuit-divider.svg" width="900" alt="" aria-hidden="true">
+</div>
+
 ### a few things i've built
 
 | project | what it is |
