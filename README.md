@@ -1,11 +1,5 @@
 <div align="center">
-  <img src="./assets/falling-words.svg" width="900" alt="Animated banner with Omer's name and hardware words falling like digital rain">
-</div>
-
-<div align="center">
-  <img src="./assets/omer-binary.svg" width="588" alt="Omer's profile picture, drawn with zeros and ones">
-  <br>
-  <sub>me, in binary — the 1s are the important bits</sub>
+  <img src="./assets/falling-words.svg?v=1" width="900" alt="Animated banner with Omer's name and hardware words falling like digital rain">
 </div>
 
 <h1 align="center">hey, i'm Omer 👋</h1>
@@ -27,6 +21,12 @@ I'm Omer, 18, and I build hardware for the fun of it. Most of my projects start 
 I design my boards in **EasyEDA Pro**, write the firmware in **C/C++**, and 3D-print the enclosures when a project has to survive the real world. So far I've made flight controllers, macropads, dev boards, and rocket avionics — if it has a microcontroller and a suspicious number of decoupling capacitors, there's a good chance I'm already sketching it.
 
 And yes, I still get excited when an LED blinks on the first try.
+
+<div align="center">
+  <img src="./assets/omer-binary.svg?v=2" width="588" alt="Omer's profile picture, drawn with zeros and ones">
+  <br>
+  <sub>me, in binary — the 1s are the important bits</sub>
+</div>
 
 <details>
 <summary>the human-readable version of my avatar</summary>
