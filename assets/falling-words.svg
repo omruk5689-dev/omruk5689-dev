@@ -36,6 +36,11 @@
       <rect width="4" height="1" fill="#9fffb0" opacity=".025"/>
     </pattern>
     
+    <clipPath id="typeClip">
+      <rect x="255" y="192" width="0" height="24">
+        <animate attributeName="width" values="0;390;390;0" keyTimes="0;0.42;0.86;1" dur="9s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
   </defs>
   <style>
     .rain { animation-name: fall; animation-timing-function: linear; animation-iteration-count: infinite; }
@@ -51,7 +56,7 @@
       .rain, .pulse, .glow, .cursor { animation: none; }
       .rain { opacity: .16 !important; transform: translateY(20px); }
       .typing { display: none; }
-      .static-sub { display: block; }
+      .static-sub { display: inline; }
     }
   </style>
   <g clip-path="url(#bannerClip)">
@@ -293,6 +298,7 @@
     </g>
     </g>
     
+    <rect width="900" height="300" fill="url(#scan)" pointer-events="none"/>
     
     <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" letter-spacing="1.4">
       <circle cx="28" cy="27" r="4" fill="#7ee787" class="pulse"/>
@@ -300,14 +306,18 @@
       <text x="872" y="31" text-anchor="end" fill="#2ea043">18 Y/O · 0x4F4D4552</text>
     </g>
     <g>
-      <text class="glow" x="450" y="171" text-anchor="middle" textLength="280" lengthAdjust="spacingAndGlyphs" font-family="'Courier New', Courier, monospace" font-size="56" font-weight="700" fill="#39d353" filter="url(#glow)">OMER.EXE</text>
       <rect x="210" y="86" width="480" height="152" rx="18" fill="#060b08" fill-opacity=".86" stroke="url(#panelStroke)" stroke-width="1.2"/>
       <text x="236" y="110" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" letter-spacing="2" fill="#2ea043">~/omruk5689-dev</text>
       <text x="664" y="110" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" letter-spacing="2" fill="#2ea043">18 Y/O</text>
+      <text class="glow" x="450" y="171" text-anchor="middle" textLength="280" lengthAdjust="spacingAndGlyphs" font-family="'Courier New', Courier, monospace" font-size="56" font-weight="700" fill="#39d353" filter="url(#glow)">OMER.EXE</text>
       <text x="450" y="171" text-anchor="middle" textLength="280" lengthAdjust="spacingAndGlyphs" font-family="'Courier New', Courier, monospace" font-size="56" font-weight="700" fill="url(#titleGrad)">OMER.EXE</text>
       <rect class="cursor" x="598" y="131" width="16" height="42" rx="2" fill="#7ee787"/>
 
-      <text x="450" y="210" text-anchor="middle" textLength="390" lengthAdjust="spacingAndGlyphs" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="700" fill="#8b949e" letter-spacing="1.5">18 · PCB DESIGNER · FIRMWARE TINKERER</text>
+      <g class="typing">
+        <text x="450" y="210" text-anchor="middle" textLength="390" lengthAdjust="spacingAndGlyphs" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="700" fill="#8b949e" letter-spacing="1.5" clip-path="url(#typeClip)">18 · PCB DESIGNER · FIRMWARE TINKERER</text>
+        <rect class="cursor" x="651" y="192" width="10" height="22" rx="1.5" fill="#7ee787"/>
+      </g>
+      <text class="static-sub" x="450" y="210" text-anchor="middle" textLength="390" lengthAdjust="spacingAndGlyphs" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="700" fill="#8b949e" letter-spacing="1.5">18 · PCB DESIGNER · FIRMWARE TINKERER</text>
     </g>
     <rect x=".5" y=".5" width="899" height="299" rx="17.5" fill="none" stroke="#1f6f43" stroke-opacity=".35"/>
   </g>
