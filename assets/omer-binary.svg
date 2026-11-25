@@ -51,7 +51,7 @@
     <circle cx="26" cy="24" r="5" fill="#ff5f56"/>
     <circle cx="44" cy="24" r="5" fill="#ffbd2e"/>
     <circle class="rec" cx="62" cy="24" r="5" fill="#27c93f"/>
-    <text x="30" y="29" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#8b949e">omer.bin<tspan class="bin-cursor" fill="#7ee787">_</tspan></text>
+    <text x="86" y="29" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#8b949e">omer.bin<tspan class="bin-cursor" fill="#7ee787">_</tspan></text>
     <text x="558" y="29" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#484f58">80 x 31</text>
     <g font-family="'Courier New', Courier, monospace" font-size="11" font-weight="700">
       <g class="bin-zeros" opacity=".55">
@@ -129,7 +129,7 @@
         <text class="glitch" x="466" y="374" style="animation-delay:-4.6s">0101</text>
       </g>
       <g class="scanline">
-        <rect x="28" y="0" width="532" height="16" fill="url(#scanTrail)"/>
+        <rect x="28" y="0" width="532" height="10" fill="url(#scanTrail)"/>
         <rect x="28" y="0" width="532" height="2" fill="#7ee787" opacity=".9" filter="url(#lineGlow)"/>
         <rect x="28" y="0" width="532" height="1.2" fill="#c8ffd4"/>
       </g>
