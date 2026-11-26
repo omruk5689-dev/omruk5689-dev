@@ -66,10 +66,18 @@
     .border-sweep { animation: borderSweep 10s linear infinite; }
     @keyframes borderSweep { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -2075; } }
 
+    .meter-dot { opacity: .18; animation: meterPulse 1.5s ease-in-out infinite; }
+    .meter-dot:nth-of-type(2) { animation-delay: .18s; }
+    .meter-dot:nth-of-type(3) { animation-delay: .36s; }
+    .meter-dot:nth-of-type(4) { animation-delay: .54s; }
+    .meter-dot:nth-of-type(5) { animation-delay: .72s; }
+    @keyframes meterPulse { 0%, 100% { opacity: .18; } 35% { opacity: 1; } 55% { opacity: .45; } }
+
     @media (prefers-reduced-motion: reduce) {
-      .bin-zeros, .bin-ones, .bin-cursor, .rain, .card-glow, .rec, .card-boot, .pool-glow, .pool-dash, .border-sweep { animation: none; }
+      .bin-zeros, .bin-ones, .bin-cursor, .rain, .card-glow, .rec, .card-boot, .pool-glow, .pool-dash, .border-sweep, .meter-dot { animation: none; }
       .rain, .pool-dash, .border-sweep { display: none; }
       .card-glow { opacity: .22; }
+      .meter-dot { opacity: .35; }
     }
   </style>
   <g clip-path="url(#card)">
@@ -81,6 +89,11 @@
     <circle class="rec" cx="62" cy="24" r="5" fill="#27c93f"/>
     <text x="86" y="29" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#8b949e">omer.bin<tspan class="bin-cursor" fill="#7ee787">_</tspan></text>
     <text x="558" y="29" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#484f58">80 x 31</text>
+      <circle class="meter-dot" cx="472.0" cy="24" r="2.1" fill="#2ea043"/>
+      <circle class="meter-dot" cx="480.5" cy="24" r="2.1" fill="#2ea043"/>
+      <circle class="meter-dot" cx="489.0" cy="24" r="2.1" fill="#2ea043"/>
+      <circle class="meter-dot" cx="497.5" cy="24" r="2.1" fill="#2ea043"/>
+      <circle class="meter-dot" cx="506.0" cy="24" r="2.1" fill="#2ea043"/>
     <g clip-path="url(#artClip)">
       <g class="rain" style="animation-duration:17.1s;animation-delay:-1.4s;opacity:0.34">
         <text x="63.0" y="0" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="700">
