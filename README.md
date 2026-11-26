@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="./assets/omer-binary.svg?v=14" width="588" alt="Omer's profile picture drawn in binary, with zeros and ones falling like digital rain">
+  <img src="./assets/omer-binary.svg?v=15" width="588" alt="Animated binary portrait of Omer with zeros and ones falling like digital rain">
   <br>
-  <sub>me, in binary</sub>
+  <sub>me, rendered in bits</sub>
 </div>
 
 <h1 align="center">Hi, I'm Omer</h1>
