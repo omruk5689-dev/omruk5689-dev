@@ -76,12 +76,24 @@
     .ambient { animation: ambientFloat ease-in-out infinite alternate; }
     @keyframes ambientFloat { from { opacity: .1; transform: translateY(0); } to { opacity: .34; transform: translateY(-5px); } }
 
+    .phrase { opacity: 0; animation: phraseCycle 18s ease-in-out infinite; }
+    .phrase:first-of-type { opacity: 1; }
+    .phrase:nth-of-type(2) { animation-delay: 6s; }
+    .phrase:nth-of-type(3) { animation-delay: 12s; }
+    @keyframes phraseCycle {
+      0%, 3% { opacity: 0; }
+      8%, 30% { opacity: 1; }
+      35%, 100% { opacity: 0; }
+    }
+
     @media (prefers-reduced-motion: reduce) {
-      .bin-zeros, .bin-ones, .bin-cursor, .rain, .card-glow, .rec, .card-boot, .pool-glow, .pool-dash, .border-sweep, .meter-dot, .ambient { animation: none; }
+      .bin-zeros, .bin-ones, .bin-cursor, .rain, .card-glow, .rec, .card-boot, .pool-glow, .pool-dash, .border-sweep, .meter-dot, .ambient, .phrase { animation: none; }
       .rain, .pool-dash, .border-sweep { display: none; }
       .card-glow { opacity: .22; }
       .meter-dot { opacity: .35; }
       .ambient { opacity: .18; }
+      .phrase { opacity: 0; }
+      .phrase:first-child { opacity: 1; }
     }
   </style>
   <g clip-path="url(#card)">
@@ -593,7 +605,11 @@
       <text class="ambient" x="575.1" y="165.4" text-anchor="middle" fill="#2ea043" style="animation-duration:5.7s;animation-delay:-3.6s">1</text>
     </g>
     <text x="30" y="446" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#8b949e">0x4F4D4552 = OMER</text>
-    <text x="558" y="446" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#484f58">the 1s are the important bits</text>
+    <g class="phrases" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11">
+      <text class="phrase" x="558" y="446" fill="#484f58">the 1s are the important bits</text>
+      <text class="phrase" x="558" y="446" fill="#2ea043">the 0s keep it honest</text>
+      <text class="phrase" x="558" y="446" fill="#39d353">still compiling</text>
+    </g>
     </g>
   </g>
 </svg>
