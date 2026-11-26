@@ -61,6 +61,96 @@
     <circle class="rec" cx="62" cy="24" r="5" fill="#27c93f"/>
     <text x="86" y="29" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#8b949e">omer.bin<tspan class="bin-cursor" fill="#7ee787">_</tspan></text>
     <text x="558" y="29" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#484f58">80 x 31</text>
+    <g clip-path="url(#artClip)">
+      <g class="rain" style="animation-duration:17.1s;animation-delay:-1.4s;opacity:0.34">
+        <text x="63.0" y="0" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="700">
+          <tspan x="63.0" dy="0" fill="#1f6f3a" fill-opacity="0.08">1</tspan>
+          <tspan x="63.0" dy="10" fill="#1f6f3a" fill-opacity="0.13">1</tspan>
+          <tspan x="63.0" dy="10" fill="#238636" fill-opacity="0.18">1</tspan>
+          <tspan x="63.0" dy="10" fill="#2ea043" fill-opacity="0.23">0</tspan>
+          <tspan x="63.0" dy="10" fill="#1f6f3a" fill-opacity="0.28">0</tspan>
+          <tspan x="63.0" dy="10" fill="#1f6f3a" fill-opacity="0.33">1</tspan>
+          <tspan x="63.0" dy="10" fill="#39d353" fill-opacity="0.5">1</tspan>
+        </text>
+      </g>
+      <g class="rain" style="animation-duration:17.9s;animation-delay:-8.9s;opacity:0.22">
+        <text x="129.0" y="0" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="700">
+          <tspan x="129.0" dy="0" fill="#238636" fill-opacity="0.08">1</tspan>
+          <tspan x="129.0" dy="10" fill="#2ea043" fill-opacity="0.15">1</tspan>
+          <tspan x="129.0" dy="10" fill="#238636" fill-opacity="0.23">0</tspan>
+          <tspan x="129.0" dy="10" fill="#1f6f3a" fill-opacity="0.30">0</tspan>
+          <tspan x="129.0" dy="10" fill="#39d353" fill-opacity="0.5">0</tspan>
+        </text>
+      </g>
+      <g class="rain" style="animation-duration:11.7s;animation-delay:-8.6s;opacity:0.33">
+        <text x="195.0" y="0" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="700">
+          <tspan x="195.0" dy="0" fill="#1f6f3a" fill-opacity="0.08">1</tspan>
+          <tspan x="195.0" dy="10" fill="#1f6f3a" fill-opacity="0.12">1</tspan>
+          <tspan x="195.0" dy="10" fill="#238636" fill-opacity="0.15">1</tspan>
+          <tspan x="195.0" dy="10" fill="#2ea043" fill-opacity="0.19">0</tspan>
+          <tspan x="195.0" dy="10" fill="#238636" fill-opacity="0.23">1</tspan>
+          <tspan x="195.0" dy="10" fill="#238636" fill-opacity="0.27">0</tspan>
+          <tspan x="195.0" dy="10" fill="#1f6f3a" fill-opacity="0.30">1</tspan>
+          <tspan x="195.0" dy="10" fill="#238636" fill-opacity="0.34">1</tspan>
+          <tspan x="195.0" dy="10" fill="#39d353" fill-opacity="0.5">0</tspan>
+        </text>
+      </g>
+      <g class="rain" style="animation-duration:10.7s;animation-delay:-4.5s;opacity:0.33">
+        <text x="261.0" y="0" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="700">
+          <tspan x="261.0" dy="0" fill="#238636" fill-opacity="0.08">1</tspan>
+          <tspan x="261.0" dy="10" fill="#2ea043" fill-opacity="0.15">1</tspan>
+          <tspan x="261.0" dy="10" fill="#2ea043" fill-opacity="0.23">0</tspan>
+          <tspan x="261.0" dy="10" fill="#238636" fill-opacity="0.30">1</tspan>
+          <tspan x="261.0" dy="10" fill="#39d353" fill-opacity="0.5">1</tspan>
+        </text>
+      </g>
+      <g class="rain" style="animation-duration:12.1s;animation-delay:-1.3s;opacity:0.38">
+        <text x="327.0" y="0" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="700">
+          <tspan x="327.0" dy="0" fill="#1f6f3a" fill-opacity="0.08">1</tspan>
+          <tspan x="327.0" dy="10" fill="#2ea043" fill-opacity="0.14">0</tspan>
+          <tspan x="327.0" dy="10" fill="#1f6f3a" fill-opacity="0.20">1</tspan>
+          <tspan x="327.0" dy="10" fill="#1f6f3a" fill-opacity="0.26">0</tspan>
+          <tspan x="327.0" dy="10" fill="#238636" fill-opacity="0.32">0</tspan>
+          <tspan x="327.0" dy="10" fill="#39d353" fill-opacity="0.5">1</tspan>
+        </text>
+      </g>
+      <g class="rain" style="animation-duration:13.1s;animation-delay:-2.1s;opacity:0.27">
+        <text x="393.0" y="0" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="700">
+          <tspan x="393.0" dy="0" fill="#2ea043" fill-opacity="0.08">0</tspan>
+          <tspan x="393.0" dy="10" fill="#1f6f3a" fill-opacity="0.12">0</tspan>
+          <tspan x="393.0" dy="10" fill="#1f6f3a" fill-opacity="0.17">0</tspan>
+          <tspan x="393.0" dy="10" fill="#1f6f3a" fill-opacity="0.21">1</tspan>
+          <tspan x="393.0" dy="10" fill="#2ea043" fill-opacity="0.25">0</tspan>
+          <tspan x="393.0" dy="10" fill="#2ea043" fill-opacity="0.29">1</tspan>
+          <tspan x="393.0" dy="10" fill="#238636" fill-opacity="0.34">0</tspan>
+          <tspan x="393.0" dy="10" fill="#39d353" fill-opacity="0.5">1</tspan>
+        </text>
+      </g>
+      <g class="rain" style="animation-duration:16.0s;animation-delay:-7.4s;opacity:0.28">
+        <text x="459.0" y="0" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="700">
+          <tspan x="459.0" dy="0" fill="#2ea043" fill-opacity="0.08">0</tspan>
+          <tspan x="459.0" dy="10" fill="#1f6f3a" fill-opacity="0.14">0</tspan>
+          <tspan x="459.0" dy="10" fill="#1f6f3a" fill-opacity="0.20">0</tspan>
+          <tspan x="459.0" dy="10" fill="#2ea043" fill-opacity="0.26">0</tspan>
+          <tspan x="459.0" dy="10" fill="#2ea043" fill-opacity="0.32">1</tspan>
+          <tspan x="459.0" dy="10" fill="#39d353" fill-opacity="0.5">0</tspan>
+        </text>
+      </g>
+      <g class="rain" style="animation-duration:17.1s;animation-delay:-13.9s;opacity:0.40">
+        <text x="525.0" y="0" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="700">
+          <tspan x="525.0" dy="0" fill="#1f6f3a" fill-opacity="0.08">1</tspan>
+          <tspan x="525.0" dy="10" fill="#238636" fill-opacity="0.11">0</tspan>
+          <tspan x="525.0" dy="10" fill="#1f6f3a" fill-opacity="0.15">0</tspan>
+          <tspan x="525.0" dy="10" fill="#2ea043" fill-opacity="0.18">1</tspan>
+          <tspan x="525.0" dy="10" fill="#238636" fill-opacity="0.21">1</tspan>
+          <tspan x="525.0" dy="10" fill="#238636" fill-opacity="0.25">1</tspan>
+          <tspan x="525.0" dy="10" fill="#2ea043" fill-opacity="0.28">1</tspan>
+          <tspan x="525.0" dy="10" fill="#1f6f3a" fill-opacity="0.31">0</tspan>
+          <tspan x="525.0" dy="10" fill="#1f6f3a" fill-opacity="0.35">1</tspan>
+          <tspan x="525.0" dy="10" fill="#39d353" fill-opacity="0.5">0</tspan>
+        </text>
+      </g>
+    </g>
     <g font-family="'Courier New', Courier, monospace" font-size="11" font-weight="700">
       <g class="bin-zeros" opacity=".55">
     <text x="30" y="60" xml:space="preserve" textLength="528" lengthAdjust="spacingAndGlyphs" fill="#15221a">000000000000000    0000000000000000000000000000000000000000000000000000000000000</text>
