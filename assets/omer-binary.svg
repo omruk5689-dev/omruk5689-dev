@@ -32,13 +32,25 @@
     @keyframes glowPulse { 0%, 100% { opacity: .16; } 50% { opacity: .42; } }
     .rec { animation: recPulse 2.2s ease-in-out infinite; }
     @keyframes recPulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+
+    .card-boot { animation: cardBoot 1.6s ease-out both; }
+    @keyframes cardBoot {
+      0% { opacity: 0; }
+      10% { opacity: .22; }
+      18% { opacity: .05; }
+      30% { opacity: .92; }
+      38% { opacity: .5; }
+      52%, 100% { opacity: 1; }
+    }
+
     @media (prefers-reduced-motion: reduce) {
-      .bin-zeros, .bin-ones, .bin-cursor, .rain, .card-glow, .rec { animation: none; }
+      .bin-zeros, .bin-ones, .bin-cursor, .rain, .card-glow, .rec, .card-boot { animation: none; }
       .rain { display: none; }
       .card-glow { opacity: .22; }
     }
   </style>
   <g clip-path="url(#card)">
+    <g class="card-boot">
     <rect width="588" height="466" fill="#0d1117"/>
     <rect x="0.5" y="0.5" width="587" height="465" rx="15.5" fill="none" stroke="#30363d"/>
     <circle cx="26" cy="24" r="5" fill="#ff5f56"/>
@@ -412,5 +424,6 @@
     <rect class="card-glow" x="3" y="3" width="582" height="460" rx="14" fill="none" stroke="#7ee787" stroke-width="1.5" filter="url(#cardGlow)"/>
     <text x="30" y="446" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#8b949e">0x4F4D4552 = OMER</text>
     <text x="558" y="446" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#484f58">the 1s are the important bits</text>
+    </g>
   </g>
 </svg>
