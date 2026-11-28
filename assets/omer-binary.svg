@@ -42,6 +42,16 @@
       <stop offset=".55" stop-color="#39d353" stop-opacity=".14"/>
       <stop offset="1" stop-color="#39d353" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="tickerFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".08" stop-color="#fff"/>
+      <stop offset=".92" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="tickerClip"><rect x="190" y="12" width="280" height="20"/></clipPath>
+    <mask id="tickerMask" maskUnits="userSpaceOnUse" x="190" y="12" width="280" height="20">
+      <rect x="190" y="12" width="280" height="20" fill="url(#tickerFade)"/>
+    </mask>
   </defs>
   <style>
     .bin-zeros { animation: dataPulse 7s ease-in-out infinite; }
@@ -103,9 +113,12 @@
       100% { opacity: 0; transform: translateY(-26px); }
     }
 
+    .header-ticker { animation: headerTicker 20s linear infinite; }
+    @keyframes headerTicker { from { transform: translateX(0); } to { transform: translateX(-280px); } }
+
     @media (prefers-reduced-motion: reduce) {
-      .bin-zeros, .bin-ones, .bin-cursor, .rain, .card-glow, .rec, .card-boot, .pool-glow, .pool-dash, .border-sweep, .meter-dot, .ambient, .phrase, .spark { animation: none; }
-      .rain, .pool-dash, .border-sweep, .spark, .ghost-cursor, .cursor-trail, .ripples { display: none; }
+      .bin-zeros, .bin-ones, .bin-cursor, .rain, .card-glow, .rec, .card-boot, .pool-glow, .pool-dash, .border-sweep, .meter-dot, .ambient, .phrase, .spark, .header-ticker { animation: none; }
+      .rain, .pool-dash, .border-sweep, .spark, .ghost-cursor, .cursor-trail, .ripples, .header-ticker { display: none; }
       .card-glow { opacity: .22; }
       .meter-dot { opacity: .35; }
       .ambient { opacity: .18; }
@@ -127,6 +140,12 @@
       <circle class="meter-dot" cx="489.0" cy="24" r="2.1" fill="#2ea043"/>
       <circle class="meter-dot" cx="497.5" cy="24" r="2.1" fill="#2ea043"/>
       <circle class="meter-dot" cx="506.0" cy="24" r="2.1" fill="#2ea043"/>
+    <g clip-path="url(#tickerClip)" mask="url(#tickerMask)">
+      <g class="header-ticker" opacity=".55" font-family="'Courier New', Courier, monospace" font-size="8.5" font-weight="700" letter-spacing=".5" fill="#2ea043">
+        <text x="190" y="26" textLength="280" lengthAdjust="spacingAndGlyphs">01001111010011010100010101010010 01001111010011010100010101010010</text>
+        <text x="470" y="26" textLength="280" lengthAdjust="spacingAndGlyphs">01001111010011010100010101010010 01001111010011010100010101010010</text>
+      </g>
+    </g>
     <g clip-path="url(#artClip)">
       <g class="rain" style="animation-duration:17.1s;animation-delay:-1.4s;opacity:0.34">
         <text x="63.0" y="0" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="700">
