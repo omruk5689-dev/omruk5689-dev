@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/omer-binary.svg?v=22" width="588" alt="Animated binary portrait of Omer with zeros and ones falling like digital rain">
+  <img src="./assets/omer-binary.svg?v=23" width="588" alt="Animated binary portrait of Omer with zeros and ones falling like digital rain">
   <br>
   <sub>me, rendered in bits</sub>
 </div>
