@@ -147,8 +147,12 @@
       35%, 100% { opacity: 0; }
     }
 
+    .corner { opacity: .2; animation: cornerPulse 4.8s ease-in-out infinite; }
+    .corner-label { opacity: .25; animation: cornerPulse 4.8s ease-in-out infinite; }
+    @keyframes cornerPulse { 0%, 100% { opacity: .18; } 50% { opacity: .8; } }
+
     @media (prefers-reduced-motion: reduce) {
-      .bin-zeros, .bin-ones, .bin-cursor, .rain, .card-glow, .rec, .card-boot, .pool-glow, .pool-dash, .border-sweep, .meter-dot, .ambient, .phrase, .spark, .header-ticker, .pulse-ring, .dust, .readout text { animation: none; }
+      .bin-zeros, .bin-ones, .bin-cursor, .rain, .card-glow, .rec, .card-boot, .pool-glow, .pool-dash, .border-sweep, .meter-dot, .ambient, .phrase, .spark, .header-ticker, .pulse-ring, .dust, .readout text, .corner, .corner-label { animation: none; }
       .rain, .pool-dash, .border-sweep, .spark, .ghost-cursor, .cursor-trail, .ripples, .header-ticker, .pulse-ring { display: none; }
       .card-glow { opacity: .22; }
       .meter-dot { opacity: .35; }
@@ -158,6 +162,7 @@
       .dust { opacity: .14; }
       .readout text { opacity: 0; }
       .readout text:first-child { opacity: 1; }
+      .corner, .corner-label { opacity: .3; }
     }
   </style>
   <g clip-path="url(#card)">
@@ -990,6 +995,14 @@
       <text class="spark" x="390" y="420" fill="#7ee787" style="animation-duration:5.1s;animation-delay:-0.4s">0</text>
       <text class="spark" x="477" y="420" fill="#39d353" style="animation-duration:6.6s;animation-delay:-2.9s">1</text>
       </g>
+      <path class="corner" d="M 38 62 L 38 50 L 50 50" fill="none" stroke="#7ee787" stroke-width="1.2" style="animation-delay:0s"/>
+      <text class="corner-label" x="54" y="60" text-anchor="start" fill="#2ea043" font-family="'Courier New', Courier, monospace" font-size="6.5" font-weight="700" style="animation-delay:0s">0000</text>
+      <path class="corner" d="M 546 50 L 558 50 L 558 62" fill="none" stroke="#7ee787" stroke-width="1.2" style="animation-delay:.3s"/>
+      <text class="corner-label" x="542" y="60" text-anchor="end" fill="#2ea043" font-family="'Courier New', Courier, monospace" font-size="6.5" font-weight="700" style="animation-delay:.3s">1111</text>
+      <path class="corner" d="M 38 408 L 38 420 L 50 420" fill="none" stroke="#7ee787" stroke-width="1.2" style="animation-delay:.6s"/>
+      <text class="corner-label" x="54" y="414" text-anchor="start" fill="#2ea043" font-family="'Courier New', Courier, monospace" font-size="6.5" font-weight="700" style="animation-delay:.6s">0011</text>
+      <path class="corner" d="M 546 420 L 558 420 L 558 408" fill="none" stroke="#7ee787" stroke-width="1.2" style="animation-delay:.9s"/>
+      <text class="corner-label" x="542" y="414" text-anchor="end" fill="#2ea043" font-family="'Courier New', Courier, monospace" font-size="6.5" font-weight="700" style="animation-delay:.9s">1100</text>
     <g class="ripples" pointer-events="none">
       <circle cx="162.5" cy="168.2" r="0" fill="none" stroke="#7ee787" stroke-width="1">
         <animate attributeName="r" values="0;0;18" keyTimes="0;0.08;0.22" dur="12s" begin="2.4s" repeatCount="indefinite"/>
