@@ -105,7 +105,7 @@
 
     @media (prefers-reduced-motion: reduce) {
       .bin-zeros, .bin-ones, .bin-cursor, .rain, .card-glow, .rec, .card-boot, .pool-glow, .pool-dash, .border-sweep, .meter-dot, .ambient, .phrase, .spark { animation: none; }
-      .rain, .pool-dash, .border-sweep, .spark, .ghost-cursor, .cursor-trail { display: none; }
+      .rain, .pool-dash, .border-sweep, .spark, .ghost-cursor, .cursor-trail, .ripples { display: none; }
       .card-glow { opacity: .22; }
       .meter-dot { opacity: .35; }
       .ambient { opacity: .18; }
@@ -612,6 +612,24 @@
       <text class="spark" x="390" y="420" fill="#7ee787" style="animation-duration:5.1s;animation-delay:-0.4s">0</text>
       <text class="spark" x="477" y="420" fill="#39d353" style="animation-duration:6.6s;animation-delay:-2.9s">1</text>
       </g>
+    <g class="ripples" pointer-events="none">
+      <circle cx="162.5" cy="168.2" r="0" fill="none" stroke="#7ee787" stroke-width="1">
+        <animate attributeName="r" values="0;0;18" keyTimes="0;0.08;0.22" dur="12s" begin="2.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;.7;0" keyTimes="0;0.08;0.12;0.22" dur="12s" begin="2.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g class="ripples" pointer-events="none">
+      <circle cx="399.6" cy="149.6" r="0" fill="none" stroke="#7ee787" stroke-width="1">
+        <animate attributeName="r" values="0;0;18" keyTimes="0;0.08;0.22" dur="12s" begin="5.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;.7;0" keyTimes="0;0.08;0.12;0.22" dur="12s" begin="5.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g class="ripples" pointer-events="none">
+      <circle cx="422.2" cy="341.9" r="0" fill="none" stroke="#7ee787" stroke-width="1">
+        <animate attributeName="r" values="0;0;18" keyTimes="0;0.08;0.22" dur="12s" begin="7.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;.7;0" keyTimes="0;0.08;0.12;0.22" dur="12s" begin="7.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
     <g class="cursor-trail" pointer-events="none">
       <circle r="2.6" fill="#7ee787" opacity="0.38"/>
       <animateMotion path="M 150 330 C 100 230 150 130 260 130 S 440 140 470 240 S 430 350 320 350 S 180 390 150 330" dur="12s" repeatCount="indefinite" begin="0.18s" keyPoints="0;0.18;0.18;0.44;0.44;0.70;0.70;0.90;0.90;1" keyTimes="0;0.10;0.20;0.30;0.45;0.55;0.65;0.78;0.90;1" calcMode="linear"/>
