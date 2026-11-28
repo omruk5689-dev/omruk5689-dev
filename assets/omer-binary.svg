@@ -137,8 +137,18 @@
     .dust { opacity: .14; animation: dustFloat ease-in-out infinite alternate; }
     @keyframes dustFloat { from { opacity: .08; transform: translateY(0); } to { opacity: .28; transform: translateY(-8px); } }
 
+    .readout text { opacity: 0; animation: readoutCycle 21s ease-in-out infinite; }
+    .readout text:first-child { opacity: 1; }
+    .readout text:nth-of-type(2) { animation-delay: 7s; }
+    .readout text:nth-of-type(3) { animation-delay: 14s; }
+    @keyframes readoutCycle {
+      0%, 3% { opacity: 0; }
+      8%, 30% { opacity: 1; }
+      35%, 100% { opacity: 0; }
+    }
+
     @media (prefers-reduced-motion: reduce) {
-      .bin-zeros, .bin-ones, .bin-cursor, .rain, .card-glow, .rec, .card-boot, .pool-glow, .pool-dash, .border-sweep, .meter-dot, .ambient, .phrase, .spark, .header-ticker, .pulse-ring, .dust { animation: none; }
+      .bin-zeros, .bin-ones, .bin-cursor, .rain, .card-glow, .rec, .card-boot, .pool-glow, .pool-dash, .border-sweep, .meter-dot, .ambient, .phrase, .spark, .header-ticker, .pulse-ring, .dust, .readout text { animation: none; }
       .rain, .pool-dash, .border-sweep, .spark, .ghost-cursor, .cursor-trail, .ripples, .header-ticker, .pulse-ring { display: none; }
       .card-glow { opacity: .22; }
       .meter-dot { opacity: .35; }
@@ -146,6 +156,8 @@
       .phrase { opacity: 0; }
       .phrase:first-child { opacity: 1; }
       .dust { opacity: .14; }
+      .readout text { opacity: 0; }
+      .readout text:first-child { opacity: 1; }
     }
   </style>
   <g clip-path="url(#card)">
@@ -1160,7 +1172,11 @@
       <text class="ambient" x="16.8" y="347.6" text-anchor="middle" fill="#2ea043" style="animation-duration:8.8s;animation-delay:-8.6s">0</text>
       <text class="ambient" x="575.1" y="165.4" text-anchor="middle" fill="#2ea043" style="animation-duration:5.7s;animation-delay:-3.6s">1</text>
     </g>
-    <text x="30" y="446" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#8b949e">0x4F4D4552 = OMER</text>
+    <g class="readout" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11">
+      <text x="30" y="446" fill="#8b949e">0x4F4D4552 = OMER</text>
+      <text x="30" y="446" fill="#39d353">01001111 01001101 01000101 01010010</text>
+      <text x="30" y="446" fill="#2ea043">0b01001111010011010100010101010010</text>
+    </g>
     <g class="phrases" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11">
       <text class="phrase" x="558" y="446" fill="#484f58">the 1s are the important bits</text>
       <text class="phrase" x="558" y="446" fill="#2ea043">the 0s keep it honest</text>
